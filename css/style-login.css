@@ -1,0 +1,61 @@
+/*  ==========================================================================
+		Custom login page styles
+		========================================================================== */
+body.login {
+  background: #fff; }
+
+.login h1 a {
+  background: url("img/icons/logo-main.svg") no-repeat top center;
+  width: 720px;
+  height: 114px;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding-bottom: 145px;
+  margin-left: -11rem; }
+
+.login div#login p#nav a,
+.login div#login p#backtoblog a {
+  color: #d2232a !important;
+  /* Your link color. */ }
+
+.login div#login {
+  padding-top: 100px; }
+
+.login div#login form#loginform {
+  background: none;
+  border: none;
+  box-shadow: none; }
+
+.login div#login form#loginform p label {
+  color: #d2232a; }
+
+.login div#login form#loginform input {
+  background: #ebebeb;
+  color: black;
+  border: none;
+  box-shadow: none; }
+
+.login div#login form#loginform p.submit input#wp-submit {
+  background: #d2232a;
+  color: #ebebeb;
+  border-radius: none;
+  border: none; }
+
+.login div#login form#loginform p.submit input#wp-submit:hover {
+  color: #000;
+  background: #ebebeb; }
+
+.login div#login p#nav {
+  float: left; }
+
+.login div#login p#nav a {
+  color: #000 !important; }
+
+.login div#login p#nav a:hover {
+  color: #d2232a !important; }
+
+.login div#login p#backtoblog a {
+  color: #000 !important; }
+
+.login div#login p#backtoblog a:hover {
+  color: #d2232a !important; }

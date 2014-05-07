@@ -1,0 +1,21 @@
+footer {
+	
+}
+
+.preload {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+#noscript-warning {
+  position: fixed;
+  top: 0;
+  width: 100%; /* For Browser Compatibility */
+  color: red;
+  padding: 10px;
+}

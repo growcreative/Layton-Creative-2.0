@@ -1,0 +1,63 @@
+.error-page {
+
+}
+
+.single-page {
+	
+}
+
+.archive-page {
+	
+}
+
+.sidebar {
+	
+}
+
+/* When you insert an image into a wordpress content box, these are the class names that wordpress generates. */
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto;
+	margin: 0.5rem auto
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0px 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+	display: block;
+	margin: 5px auto;
+	margin: .5rem auto;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0px 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 0px 20px 20px;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

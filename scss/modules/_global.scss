@@ -1,0 +1,208 @@
+/* =============================================================================
+   5. 	Global Styles
+   ========================================================================== */
+body {
+  font:$light $fontsize/$line-height $font-family-text;
+  background: $white;
+  color: $color-font;
+	background: none;
+	overflow-x: hidden;
+	overflow-y: scroll; // helps with scrolling for mobile
+	@include box-sizing;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+// For sticking the footer to page bottom.
+.container {
+	height: 100%;
+}
+
+/* =============================================================================
+   Single Full Width
+   ========================================================================== */
+.wrap {
+	position: relative;
+	margin: 0 auto;
+	width: $page-width;
+	@media (max-width: 900px) {
+		width: 100%;
+		margin: 0;
+		padding: 0 5%;  		
+	}
+	@media (max-width: 900px) {
+		width: 100%;
+		margin: 0;
+		padding: 0 2.5%;  		
+	}
+}
+
+/* =============================================================================
+   Percentage Width Columns
+   ========================================================================== */
+.pc20, .pc25, .pc30 .pc50, .pc70 .pc75, .pc80 {
+	img {
+		max-width:100%;
+		vertical-align: middle ;
+	}
+}
+
+.pc20 {
+	float: left;
+	width: 20%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc25 {
+	float: left;
+	width: 25%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc30 {
+	float: left;
+	width: 30%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc40 {
+	float: left;
+	width: 40%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc50 {
+	float: left;
+	width: 50%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+.pc60 {
+	float: left;
+	width: 60%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc70 {
+	float: left;
+	width: 70%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc75 {
+	float: left;
+	width: 75%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc80 {
+	float: left;
+	width: 80%;
+	@media (max-width: 600px) {
+		float: none;
+		width: 100%;  		
+	}
+}
+
+.pc20 + .pc80 {
+}
+.pc80 + .pc20 {
+}
+.pc50 + .pc50 {
+}
+.pc25 + .pc75 {
+}
+.pc75 + .pc25 {
+}
+
+
+
+/* =============================================================================
+   Headings
+   ========================================================================== */
+strong {
+	font-weight: $bold;
+}
+
+h1, h2, h3, h4, blockquote {
+	font-family: $font-family-heading;
+	font-weight: $normal;
+}
+
+h1, h2, blockquote {
+	font-size: 30px;
+} 
+
+h3, h4 {
+	font-size: 24px;
+}
+
+h5, h6 {
+	font-size: 20px;
+}
+
+/* =============================================================================
+   Paragraph Styles
+   ========================================================================== */
+p {
+	a {
+		border-bottom: 1px solid $color-primary;
+	}
+	a:hover {
+		border-bottom: 1px solid inherit;
+	}
+} 
+
+/* =============================================================================
+   Elements 
+   ========================================================================== */ 
+.btn {
+	background: $color-black;
+	color: $color-white;
+	display: inline-block;
+	padding: 4px 10px;
+	vertical-align: middle;
+	text-align: center;
+	&:hover {
+		background: $color-primary;
+	}
+}
+
+a.primary {
+	background: $color-primary;
+} 
+a.primary:hover {
+	background: $color-secondary;
+}
+a.secondary {
+	background: $color-secondary;
+} 
+a.secondary:hover {
+	background: $color-primary;
+}

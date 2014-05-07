@@ -1,0 +1,43 @@
+/*
+	Theme Name: 
+	Author URI: http://sprinkler.net.au
+	Description: HTML5 Blank WordPress - Theme Name V1.0
+	Version: 1.0
+	Author: Sprinkler & Hello Imaginarium
+*/
+
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+@import 'mixins/_mixins.scss';
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+@import 'modules/_variables.scss';
+@import 'modules/_reset.scss';
+@import 'modules/_global.scss';
+@import 'modules/_svg.scss';
+//@import 'modules/_typography.scss';
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import 'partials/_header.scss';
+@import 'partials/_wordpress.scss';
+@import 'partials/_footer.scss';
+
+//----------------------------------*\
+// OBJECTS & MODULES
+//----------------------------------*/
+@import 'modules/_misc.scss';
+@import "modules/_plugins.scss";
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+//@import 'vendor/_external.scss';
