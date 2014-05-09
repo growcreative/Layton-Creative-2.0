@@ -1,0 +1,50 @@
+#profile {
+	font-size: 12px;
+	article {
+		margin-bottom: 14px;
+	}
+	h1 {
+		font-family: $font-family-text;
+		font-size: 12px;
+		font-weight: $semibold;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 24px;
+		margin: 18px 0;
+	}
+	p {
+		padding-bottom: 18px;
+		line-height: 18px;
+	}
+	div.pc50 {
+		padding: 0 24px 0 0;
+	}
+	blockquote {
+		margin-bottom: 1em;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	cite {
+		font-weight: $bold;
+	}
+	
+}
+#services {
+	div.pc50 {
+		padding: 0 0 0 24px;
+	}
+	p {
+		padding: 0;
+	}
+	strong {
+		font-weight: $bold;
+		font-size: 14px;
+	}
+	ul {
+		margin: 0 0 14px 0
+	}
+	li {
+		text-indent: 4%;
+	}
+}

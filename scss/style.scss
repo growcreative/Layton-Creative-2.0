@@ -17,10 +17,12 @@
 //----------------------------------*/
 
 @import 'modules/_variables.scss';
+
 @import 'modules/_reset.scss';
 @import 'modules/_global.scss';
 @import 'modules/_svg.scss';
-//@import 'modules/_typography.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_forms.scss';
 
 //----------------------------------*\
 // PARTIALS
@@ -33,11 +35,12 @@
 //----------------------------------*\
 // OBJECTS & MODULES
 //----------------------------------*/
-@import 'modules/_misc.scss';
 @import "modules/_plugins.scss";
 
 //----------------------------------*\
-// VENDOR
+// PAGES
 //----------------------------------*/
 
-//@import 'vendor/_external.scss';
+@import "pages/_home.scss";
+@import "pages/_profile.scss";
+@import "pages/_design.scss";

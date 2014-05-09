@@ -1,3 +1,120 @@
-header {
-	
+/* =============================================================================
+   Header and Nav
+   ========================================================================== */
+
+.logo {
+	float: left;
+	margin: 12px 0;
+	@media (max-width: 600px) {
+		position: absolute; 
+		left: 8px;
+	}
 }
+
+
+#main_navigation {
+	width: 100%;
+	padding: 32px 0 46px;
+	font-family: $font-family-navigation;
+	ul {
+		text-align: right;
+	}
+	li {
+		display: inline-block;
+		font-size: 13px;
+		
+	}
+	a {
+		display: block;
+		padding: 8px 24px;
+		font-weight: $bold;
+	}
+	a:hover {
+		color: $color-primary;
+	}
+	a:active, a:focus {
+		color: $color-primary;
+	}
+	.menu-button {
+		display: none; /* Hidden until viewport less than 600px wide */
+		background: $color-primary;
+		color: $color-white;
+		padding: 10px 0;
+		font-size: 16px;
+		cursor: pointer; 
+		img {
+			margin: -4px 6px 0 0;
+			vertical-align: middle;
+		}
+		@media (max-width: 600px) {
+			display: block;
+			text-align: center;
+		} 
+	}
+}
+.current-menu-item {
+	color: $color-primary;
+	pointer-events: none;
+	@media (max-width: 600px) {
+		color: $color-white;  		
+	}
+}
+
+/* =============================================================================
+   Responsive Nav
+   ========================================================================== */
+#main_navigation {
+	@media (max-width: 600px) {
+		padding: 0;
+		position: absolute;
+		top: 0;
+		left: 0;  
+		z-index: 9999;
+		ul {
+			background: $color-primary;
+			border: none;
+			color: $color-white;
+			display: block;
+			height: auto;
+			padding:0;
+			width: 100%;
+			text-align: center;
+		}
+		li { 
+			display:none; /* hidden until active */
+			font-size: 15px;
+			width: 60%;
+			margin: 0 auto;
+			line-height: 1.25em;
+		}
+		li:not(:last-of-type) {
+			border-bottom: 1px solid $color-white;
+		}
+		a {
+			padding: 10px 0 6px;  		
+		}
+		a:hover {
+			color:#222; 
+		}
+	}
+}
+@media (max-width: 600px) {
+	#main_navigation .active {
+		+ ul	{
+			padding: 0 0 10px;
+			li {
+				display: block;  		
+			}
+		}
+	}		
+}
+
+
+/* =============================================================================
+   Non home Page
+   ========================================================================== */
+hr {
+	margin: 0 0 12px 0;
+}   
+   
+   

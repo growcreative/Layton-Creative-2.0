@@ -23,4 +23,13 @@
 	<div class="container">
 		<div class="wrap">
 			<header>
+				<nav id="main_navigation">
+					<svg class="logo" viewBox="0 0 23 8">
+					<use xlink:href="#logo"></use>
+				</svg>
+					<div class="menu-button"> 
+						<img src="<?php bloginfo('template_directory'); ?>/img/mobile-menu-icon.png" alt="mobile-menu-icon" >MENU
+					</div>
+					<?php wp_nav_menu(); ?>
+				</nav>
 			</header>

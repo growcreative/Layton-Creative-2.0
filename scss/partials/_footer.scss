@@ -1,21 +1,21 @@
-footer {
+#page-footer {
+	margin-top: 80px;
+	background: $color-black;
+	color: $color-white;
+	font-size: 13px;
+	padding: 18px 0 52px;
+	@media (max-width: 600px) {
+		.pc25 {
+			margin-bottom: 1em;
+		} 		
+	}
+	.logo {
+		position: static;
+		fill: $color-white;
+		margin: 0 0 16px 0;
+		float: none;
+	}
 	
 }
 
-.preload {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 1px;
-	height: 1px;
-	visibility: hidden;
-	overflow: hidden;
-}
 
-#noscript-warning {
-  position: fixed;
-  top: 0;
-  width: 100%; /* For Browser Compatibility */
-  color: red;
-  padding: 10px;
-}

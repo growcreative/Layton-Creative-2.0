@@ -1,33 +1,35 @@
 /*  ==========================================================================
 		Fonts	
 		========================================================================== */
-$font-family-headline: "font-here", sans-serif; /* weights, 500, 700 */
-$font-family-text: "font-here", serif; /* weights, 500, 700 */
-$fontsize: 14px;
+$font-family-headline: "Ebisu light", Helvetica, Arial, Sans-Serif; /* weights, 500, 700 */
+$font-family-text: Arial, Helvetica, Sans-Serif;
+  /* weights, 500, 700 */
+$font-family-navigation: $font-family-text;
+$fontsize: 15px;
 
 /*  ==========================================================================
 		Line Height	
 		========================================================================== */
-$line-height: 16px;
+$line-height: 1.25em;
 
 /*  ==========================================================================
 		Font Weights	
 		========================================================================== */ 
-$light: 300;
-$normal: 500;
+$light: 100;
+$normal: 300;
 $semibold: 600;
-$bold: 700;
+$bold: 800;
 
 /*  ==========================================================================
 		Colors	
 		========================================================================== */
 $color-white: #FFF;
 $color-black: #000;
-$color-font: #58585B;
-$color-primary: #B95A6C;
+$color-font: #5b5248;
+$color-primary: #5b5248;
 $color-secondary: #99CC66;
 
 /*  ==========================================================================
 		Wrap & page setups width	
 		========================================================================== */
-$page-width: 960px;
+$page-width: 900px;

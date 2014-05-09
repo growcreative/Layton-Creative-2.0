@@ -1,0 +1,92 @@
+
+::-webkit-input-placeholder {
+   color: lighten($color-font,10);
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: lighten($color-font,10);  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten($color-font,10);  
+}
+:-ms-input-placeholder {  
+   color: lighten($color-font,10);  
+} 
+
+input:focus::-webkit-input-placeholder,
+.input:focus::-webkit-input-placeholder {
+   color: lighten($color-font,5);
+}
+input:focus:-moz-placeholder,
+.input:focus:-moz-placeholder { /* Firefox 18- */
+   color: lighten($color-font,5);  
+}
+input:focus::-moz-placeholder,
+.input:focus::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten($color-font,5);  
+}
+input:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder {  
+   color: lighten($color-font,5);  
+}
+
+label.error {
+  position:relative;
+  top: -10px;
+}
+.error::-webkit-input-placeholder {
+   color: darken(red,10);
+}
+.error:-moz-placeholder { /* Firefox 18- */
+   color: darken(red,10);  
+}
+.error::-moz-placeholder {  /* Firefox 19+ */
+   color: darken(red,10);  
+}
+.error:-ms-input-placeholder {  
+   color: darken(red,10);  
+}
+
+input:focus,
+.input:focus {
+	outline:0;
+	background: #fff;
+	box-shadow: 1px 1px 2px -6px darken($color-font,10);
+}
+#contact_us {
+  input:focus,
+  .input:focus {
+  	outline:0;
+  	background: darken($color-white,5);
+  	box-shadow: 1px 1px 2px -6px darken($color-font,10);
+  }
+  .input { 
+    
+    background: darken($color-white,10);
+    border: none;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    width:100%;
+  }
+  label {
+	  display: none;
+  }
+}
+.message_box {
+  min-height: 225px;
+} 
+#submit_button, 
+#submit {
+  background: $color-primary;
+  border: none;
+  color: $color-white;
+  font-size: 14px;
+  padding: 7px 14px;
+  margin-top: 0px;
+  float: right;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  &:hover {
+	  background: $color-secondary;
+	} 
+}
