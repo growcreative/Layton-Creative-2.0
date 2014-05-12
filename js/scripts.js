@@ -30,4 +30,12 @@
 			return false;
 		});
 	});
+	// Calculate Footer Position
+	var footercalc = function() {
+			var panelheight = ($(window).height()-220);
+			$('#container').css('min-height', panelheight);
+		};
+		// Apply Footer Position
+	$(document).ready(footercalc);
+	$(window).resize(footercalc);
 })(jQuery);

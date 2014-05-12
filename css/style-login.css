@@ -1,17 +1,16 @@
 /*  ==========================================================================
-		Custom login page styles
+		Login Form	
 		========================================================================== */
 body.login {
   background: #fff; }
 
 .login h1 a {
-  background: url("img/icons/logo-main.svg") no-repeat top center;
-  width: 720px;
-  height: 114px;
+  background: url("../img/logo-main.svg") no-repeat top center;
   text-indent: -9999px;
+  margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 145px;
-  margin-left: -11rem; }
+  pointer-events: none;
+  display: block; }
 
 .login div#login p#nav a,
 .login div#login p#backtoblog a {
@@ -22,7 +21,7 @@ body.login {
   padding-top: 100px; }
 
 .login div#login form#loginform {
-  background: none;
+  background: #f9f9f9;
   border: none;
   box-shadow: none; }
 

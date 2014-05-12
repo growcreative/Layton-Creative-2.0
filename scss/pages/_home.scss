@@ -1,10 +1,19 @@
 .home {
+	background: $color-black;
+	color: $color-white;
+	.logo {
+		fill: $color-white;
+	}
+	.current-menu-item {
+		color: darken($color-white,5);
+	}
 	h1 {
+		color: $color-white;
 		max-width: 85%;
 		margin: 0 0 80px;
 		@media (max-width: 600px) {
-			width: 100%;
-			padding: 80px 0 36px; 
+			max-width: 100%;
+			padding: 30px 0 36px; 
 			margin: 0; 		
 		}
 		span {
@@ -12,9 +21,21 @@
 		} 
 	}
 	h2 {
+		color: $color-white;
 		margin-bottom: 16px;
 	}
+	@media (max-width: 600px) {
+		h1:before {
+			content:'';
+			display: block;
+			background: url(img/logo-mobile.svg);
+			width: 69px;
+			height: 23px;
+			margin: 0 auto 32px;
+		}  		
+	}
 }
+
 #projects {
 	article {
 		position: relative;
@@ -47,29 +68,36 @@
 .w25 {
 	span {
 		display: none;
-		background: rgba($color-black, .5);
 		position: absolute;
 		top: 0;
 		left: 0;
-		right:7%;
+		right:8%;
 		bottom: 0;
 	}
-	&:hover span {
-	display: block;
+	&:hover {
+		span {
+			display: block;
+		}
+		img {
+			opacity: .5;
+		}
 	}
 }
 .w50 {
 	span {
 		display: none;
-		background: rgba($color-black, .5);
 		position: absolute;
 		top: 0;
 		left: 0;
 		right:4%;
 		bottom: 0;
 	}
-	
-	&:hover span {
-	display: block;
+	&:hover {
+		span {
+			display: block;
+		}
+		img {
+			opacity: .5;
+		}
 	}
 }

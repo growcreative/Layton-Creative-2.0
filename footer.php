@@ -1,6 +1,7 @@
 			</div>
 			<!-- /wrap & body elements -->
-			<footer id="page-footer" class="group">
+		</div><!-- /container -->
+		<footer id="page-footer" class="group">
 				<div class="wrap">
 					<div class="pc25">
 						<svg class="logo" viewBox="0 0 23 8">
@@ -26,12 +27,6 @@
 					</ul>
 				</div>
 			</footer>
-		
-		</div>
-		<!-- /container -->
-			
 		<?php wp_footer(); ?>		
-		
-	
 	</body>
 </html>

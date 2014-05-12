@@ -11,9 +11,9 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
 		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">		
 		<!-- fonts -->
-		
-
+		<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ThikR_TCrdBH8YJzz2z5DJL8qTSmyjE&#038;sensor=false&#038;ver=3.7.1'></script>
 		<?php wp_head(); ?>
+		
 	</head>
 	<body <?php body_class(); ?>>
 	<!-- svg code -->
@@ -21,10 +21,10 @@
 	<!-- /svg code -->	
 	<!-- page wrapper & footer padding-->
 	<div id="container">
-		
-			<header class="group">
+		<div class="wrap">
+			<header>
 				<nav id="main_navigation">
-					<svg class="logo largescreen" viewBox="0 0 23 8">
+					<svg class="logo" viewBox="0 0 23 8">
 					<use xlink:href="#logo"></use>
 				</svg>
 					<div class="menu-button"> 
@@ -33,4 +33,3 @@
 					<?php wp_nav_menu(); ?>
 				</nav>
 			</header>
-		<div class="wrap">

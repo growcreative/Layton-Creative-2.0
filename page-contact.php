@@ -1,4 +1,4 @@
-<?php /* Template Name: Contact */ get_header(); ?>
+<?php /* Template Name: Contact */ get_header("contact"); ?>
 	
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<!-- section -->
@@ -6,9 +6,9 @@
 		<h1>Contact</h1>
 		<hr />
 		<article class="group">
-			<div class="pc50">
+			<div id="contact-layton-creative" class="pc50">
 				<h2>Say Hello</h2>
-				<?php the_field('intro_text'); ?>
+				<p><?php the_field('intro_text'); ?></p>
 				<?php
 				if(isset($_POST['submitted'])) {
 				if(trim($_POST['contactName']) === '') {
@@ -55,7 +55,7 @@
 				<?php if(isset($hasError) || isset($captchaError)) { ?>
 				<p class="error">Please fill out fields correctly.<p>
 				<?php } ?>
-				<form id="contact_us" name="myemailform" action="<?php the_permalink(); ?>" method="post">														
+				<form id="contact_us" class="group" name="myemailform" action="<?php the_permalink(); ?>" method="post">														
 					<label for="contactName">Name<span>*</span></label>
 					<input type="text" class="input" name="contactName" placeholder="Name" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" required/>
 					<label for="email">Email Address<span>*</span></label> 

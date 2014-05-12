@@ -5,24 +5,29 @@
 .logo {
 	float: left;
 	margin: 12px 0;
+	fill: $color-black;
+	&:hover {
+		fill: lighten($color-black, 40);
+	}
 	@media (max-width: 600px) {
-		position: absolute; 
-		left: 8px;
+		display: none;  		
 	}
 }
 
-
 #main_navigation {
-	width: 100%;
+	width: 900px;
+	margin: 0 auto;
 	padding: 32px 0 46px;
 	font-family: $font-family-navigation;
+	@media (max-width: 900px) {
+		width: 100%;  		
+	}
 	ul {
 		text-align: right;
 	}
 	li {
 		display: inline-block;
 		font-size: 13px;
-		
 	}
 	a {
 		display: block;
@@ -30,10 +35,10 @@
 		font-weight: $bold;
 	}
 	a:hover {
-		color: $color-primary;
+		color: darken($color-white, 20);
 	}
 	a:active, a:focus {
-		color: $color-primary;
+		color: darken($color-white, 20);
 	}
 	.menu-button {
 		display: none; /* Hidden until viewport less than 600px wide */
@@ -66,10 +71,14 @@
    ========================================================================== */
 #main_navigation {
 	@media (max-width: 600px) {
+		width: 100%;
 		padding: 0;
-		position: absolute;
+		margin: 0 0 8px 0;
+		/*
+position: absolute;
 		top: 0;
 		left: 0;  
+*/
 		z-index: 9999;
 		ul {
 			background: $color-primary;

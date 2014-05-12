@@ -1,11 +1,4 @@
 .logo {
 	width: 46px;
 	height: 16px;
-	fill: $color-black;
-	&:hover {
-		fill: lighten($color-black, 40);
-	}
-	@media (max-width: 600px) {
-		fill: $color-white;  		
-	}
 }

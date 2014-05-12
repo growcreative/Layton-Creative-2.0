@@ -1,0 +1,34 @@
+/* =============================================================================
+   Contact
+   ========================================================================== */
+#contact-layton-creative {
+	padding-right: 4%;
+	h2 {
+		font-family: $font-family-headline;
+		font-size: 24px;
+		margin: 16px 0;
+	}
+	p {
+		margin-bottom: 16px;
+		font-size: 12px;
+	}
+	address {
+		font-size: 12px;
+		padding-bottom: 24px;
+	}
+}
+#contact_us {
+	padding-right: 10%;
+}
+
+#googlemap {
+	min-height: 400px;
+	margin-top: 54px;
+}
+.google-maps-link {
+	max-width: 100%;
+}
+.gmnoprint img {
+    max-width: none; 
+    z-index: 9999;
+}

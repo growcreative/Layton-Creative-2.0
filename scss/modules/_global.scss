@@ -2,7 +2,7 @@
    5. 	Global Styles
    ========================================================================== */
 body {
-  line-height: 1.25em;
+	line-height: 1.25em;
 	font-family: $font-family-text;
   color: $color-font;
 	overflow-x: hidden;
@@ -12,6 +12,10 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+.container {
+	display: block;
+	min-height: 100%;
 }
 
 /* =============================================================================
