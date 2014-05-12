@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	
-	<section id="design-single" role="main">
-		<h2><a href="/design"> Design</a></h2>
+	<section id="direction-single" role="main">
+		<h2>Direction</h2>
 		<hr />
 		<article id="post-<?php the_ID(); ?>"  class="group">
 			<div class="project_details pc30">
@@ -19,14 +19,9 @@
 			$size = "fullwidth"; 
 			$image = wp_get_attachment_image_src( $attachment_id, $size ); ?>
 			<img src="<?php echo $image[0]; ?>"/>
-			 
 			<?php endwhile; ?><?php endif; ?>
 			</div>			
 		</article>
-		
-		
 	<?php endwhile; endif; ?>
-	
 	</section>
-	
 <?php get_footer(); ?>

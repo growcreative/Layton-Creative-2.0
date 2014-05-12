@@ -19,20 +19,21 @@
 	<div class="portfolioContainer">
 		<?php query_posts( array ( 'post_type' =>  'designposts' ) ); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<article class="<?php the_field('data_category'); ?> pc25">
-			<div class="portfolio_post">
+			<?php 
+			$cat= get_field( 'data_category' ); 
+			$cat= array_map('sanitize_title', $cat); 
+			$cat= implode(' ', $cat);?>
+			<article class="<?php echo $cat; ?> pc25">
+			<div class="design_post">
 				<a href="<?php the_permalink() ?>">
 					<?php $attachment_id = get_field('project_thumbnail');
 					$size = "quartersquare"; 
 					$image = wp_get_attachment_image_src( $attachment_id, $size ); ?>
 					<img src="<?php echo $image[0]; ?>" />
-					
-					<div class="hover">
-						<div class="more_info">
-							<h3><?php the_title(); ?></h3>
-							<h4>View Project</h3>
-						</div>
-					</div>
+					<span>
+						<h3><?php the_title(); ?></h3>
+						<h4>View Project</h3>
+					</span>
 				</a>
 			</div>
 		</article>

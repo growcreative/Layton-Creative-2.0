@@ -55,6 +55,7 @@
 .current-menu-item {
 	color: $color-primary;
 	pointer-events: none;
+	text-decoration: underline;
 	@media (max-width: 600px) {
 		color: $color-white;  		
 	}
